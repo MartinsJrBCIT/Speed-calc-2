@@ -1,0 +1,38 @@
+import time
+
+
+print("    Welcome to Martinothegoat speed calculator program.\n\n    We will measure how fast you can run based off of your mile run.\n")
+print("        Let's start! Enter the minutes you ran your miles run here:")
+
+minruntime = float(input())
+
+
+if minruntime < 5:
+    
+    print("You ran a sub 5? sureeeeee... just put in your extra seconds here...")
+    
+    secruntime = float(input())
+    
+while True:
+
+    if secruntime > 59:
+        
+        print ("That's a minute! Put it under 60 so we can get your time down properly...")
+        
+        secruntime = float(input())
+        
+        continue
+        
+    else:
+           print (f"Okay, so we have {round(minruntime, 0)} minutes, & {round(secruntime, 0)} seconds.")
+           
+        
+    break
+        
+        
+        
+        
+        
+        
+        
+        
