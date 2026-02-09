@@ -13,6 +13,11 @@ if minruntime < 5:
     
     secruntime = float(input())
     
+else:
+    
+     print("\nOkay! Now put in your extra seconds here...")
+     
+     secruntime = float(input())
 while True:
 
     if secruntime > 59:
@@ -24,15 +29,14 @@ while True:
         continue
         
     else:
-           print (f"Okay, so we have {round(minruntime, 0)} minutes, & {round(secruntime, 0)} seconds.")
+        
+        print (f"\nOkay, so we have {round(minruntime, 0)} minutes, & {round(secruntime, 0)} seconds.")
+           
+        time.sleep(4)
+        
+        avgspeed = 1/(((minruntime * 60) + secruntime)/3600)
+               
+        print (f"\nYour average speed within that mile is {round(avgspeed, 2)} MPH!")
            
         
     break
-        
-        
-        
-        
-        
-        
-        
-        
